@@ -18,6 +18,7 @@ jobs:
           && make html
           && cd _build/html
           && touch .nojekyll
+          && cp -r * ../../public
       - name: Deploy
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
