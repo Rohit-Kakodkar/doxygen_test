@@ -18,8 +18,8 @@ jobs:
           && make html
           && cd _build/html
           && touch .nojekyll
-          && mkdir ../../publics
-          && cp -r * ../../publics
+          && mkdir ../../public
+          && cp -r * ../../public
       - name: Deploy
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
